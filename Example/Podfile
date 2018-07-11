@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XAbstractionLibrary-NetWork_Example' do
+  pod 'XAbstractionLibrary-NetWork', :path => '../'
+
+  target 'XAbstractionLibrary-NetWork_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
