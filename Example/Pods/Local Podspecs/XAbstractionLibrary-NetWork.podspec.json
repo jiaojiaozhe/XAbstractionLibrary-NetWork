@@ -1,6 +1,6 @@
 {
   "name": "XAbstractionLibrary-NetWork",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "summary": "XAbstractionLibrary-NetWork是一个抽象层网络组件.",
   "description": "XAbstractionLibrary-NetWork是一个抽象层网络组件,拥有超简单的易用性，同时拥有业务无关、超时重发、加载状态回调、请求唯一性保证等功能。",
   "homepage": "https://github.com/jiaojiaozhe/XAbstractionLibrary-NetWork",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/jiaojiaozhe/XAbstractionLibrary-NetWork.git",
-    "tag": "0.0.2"
+    "tag": "0.0.3"
   },
   "platforms": {
     "ios": "8.0"

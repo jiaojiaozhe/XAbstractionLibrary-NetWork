@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XAbstractionLibrary-NetWork'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'XAbstractionLibrary-NetWork是一个抽象层网络组件.'
 
 # This description is used to generate tags and improve search results.
