@@ -6,12 +6,12 @@
 //
 
 #import "XHttpRequestDelegate.h"
-#import <XAbstractionLibrary_Base/XAbstractionLibrary-Base-umbrella.h>
+//#import <XAbstractionLibrary_Base/XAbstractionLibrary-Base-umbrella.h>
 
 /**
  *  短连接http请求对象
  */
-@interface XHttpRequest : XBaseModel<XHttpRequestDelegate>
+@interface XHttpRequest : NSObject<XHttpRequestDelegate>
 
 /**
  *  请求命令名
