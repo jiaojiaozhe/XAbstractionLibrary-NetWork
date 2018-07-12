@@ -23,6 +23,7 @@
 		6C5C3F657B377FA63B6FAD56 /* Pods_XAbstractionLibrary_NetWork_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45010282F266D8DD4D89BC6A /* Pods_XAbstractionLibrary_NetWork_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BCE655C020F783910018F73E /* BaseHttpRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE655BF20F783910018F73E /* BaseHttpRequestManager.m */; };
 		DB37234EDEC6A810103C5766 /* Pods_XAbstractionLibrary_NetWork_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0ECB89D6D6A6D1B71200054 /* Pods_XAbstractionLibrary_NetWork_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		060C90278C5C62A51245015A /* XAbstractionLibrary-NetWork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "XAbstractionLibrary-NetWork.podspec"; path = "../XAbstractionLibrary-NetWork.podspec"; sourceTree = "<group>"; };
-		2206464D2508648A984BFEBA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		060C90278C5C62A51245015A /* XAbstractionLibrary-NetWork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "XAbstractionLibrary-NetWork.podspec"; path = "../XAbstractionLibrary-NetWork.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2206464D2508648A984BFEBA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3A752BB56A714AD6104AC32D /* Pods-XAbstractionLibrary-NetWork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XAbstractionLibrary-NetWork_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XAbstractionLibrary-NetWork_Tests/Pods-XAbstractionLibrary-NetWork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		45010282F266D8DD4D89BC6A /* Pods_XAbstractionLibrary_NetWork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XAbstractionLibrary_NetWork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		579381E477FBE24DE7BE7837 /* Pods-XAbstractionLibrary-NetWork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XAbstractionLibrary-NetWork_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XAbstractionLibrary-NetWork_Tests/Pods-XAbstractionLibrary-NetWork_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,10 +62,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		67E92C9A66D7775EA074DF07 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		67E92C9A66D7775EA074DF07 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		750E9D15EC7CC2D8A5FADF61 /* Pods-XAbstractionLibrary-NetWork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XAbstractionLibrary-NetWork_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XAbstractionLibrary-NetWork_Example/Pods-XAbstractionLibrary-NetWork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCE655BE20F783910018F73E /* BaseHttpRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseHttpRequestManager.h; sourceTree = "<group>"; };
+		BCE655BF20F783910018F73E /* BaseHttpRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseHttpRequestManager.m; sourceTree = "<group>"; };
 		C4CC135371E24D232DAA7ED1 /* Pods-XAbstractionLibrary-NetWork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XAbstractionLibrary-NetWork_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XAbstractionLibrary-NetWork_Example/Pods-XAbstractionLibrary-NetWork_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D0ECB89D6D6A6D1B71200054 /* Pods_XAbstractionLibrary_NetWork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XAbstractionLibrary_NetWork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,6 +135,7 @@
 		6003F593195388D20070C39A /* Example for XAbstractionLibrary-NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				BCE655BD20F783660018F73E /* AbstractionLibrary */,
 				6003F59C195388D20070C39A /* XAppDelegate.h */,
 				6003F59D195388D20070C39A /* XAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -183,6 +187,15 @@
 				2206464D2508648A984BFEBA /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		BCE655BD20F783660018F73E /* AbstractionLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				BCE655BE20F783910018F73E /* BaseHttpRequestManager.h */,
+				BCE655BF20F783910018F73E /* BaseHttpRequestManager.m */,
+			);
+			path = AbstractionLibrary;
 			sourceTree = "<group>";
 		};
 		EF8FA820B154523A66C762FC /* Pods */ = {
@@ -337,10 +350,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-XAbstractionLibrary-NetWork_Example/Pods-XAbstractionLibrary-NetWork_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MD5Digest/MD5Digest.framework",
+				"${BUILT_PRODUCTS_DIR}/OpenUDID/OpenUDID.framework",
+				"${BUILT_PRODUCTS_DIR}/XAbstractionLibrary-Base/XAbstractionLibrary_Base.framework",
 				"${BUILT_PRODUCTS_DIR}/XAbstractionLibrary-NetWork/XAbstractionLibrary_NetWork.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MD5Digest.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenUDID.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XAbstractionLibrary_Base.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XAbstractionLibrary_NetWork.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +378,7 @@
 			files = (
 				6003F59E195388D20070C39A /* XAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* XViewController.m in Sources */,
+				BCE655C020F783910018F73E /* BaseHttpRequestManager.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

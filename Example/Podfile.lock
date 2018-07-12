@@ -1,0 +1,50 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - MD5Digest (1.1.0)
+  - OpenUDID (1.0.0)
+  - XAbstractionLibrary-Base (0.0.1):
+    - MD5Digest (~> 1.1.0)
+    - OpenUDID (~> 1.0.0)
+  - XAbstractionLibrary-NetWork (0.0.1):
+    - AFNetworking
+    - XAbstractionLibrary-Base
+
+DEPENDENCIES:
+  - XAbstractionLibrary-NetWork (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - MD5Digest
+    - OpenUDID
+  https://github.com/jiaojiaozhe/XAbstractionLibrary-Specs:
+    - XAbstractionLibrary-Base
+
+EXTERNAL SOURCES:
+  XAbstractionLibrary-NetWork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
+  OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
+  XAbstractionLibrary-Base: 2e041fdbb6fee3269c6958e42e740f8f466ea8f8
+  XAbstractionLibrary-NetWork: 0b91b3e590b6a06998dcb2d84ed634d416050b3b
+
+PODFILE CHECKSUM: f4d78186a356c7edbad21fd54de0b7262eb017a8
+
+COCOAPODS: 1.5.0

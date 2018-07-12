@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XAbstractionLibrary-NetWork'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of XAbstractionLibrary-NetWork.'
+  s.version          = '0.0.1'
+  s.summary          = 'XAbstractionLibrary-NetWork是一个抽象层网络组件.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+XAbstractionLibrary-NetWork是一个抽象层网络组件,拥有超简单的易用性，同时拥有业务无关、超时重发、加载状态回调、请求唯一性保证等功能。
                        DESC
 
   s.homepage         = 'https://github.com/jiaojiaozhe/XAbstractionLibrary-NetWork'
@@ -39,4 +39,9 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.dependency 'AFNetworking'
+  s.dependency 'XAbstractionLibrary-Base'
+  
+  
 end
