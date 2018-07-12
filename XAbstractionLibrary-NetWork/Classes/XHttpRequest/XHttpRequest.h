@@ -6,7 +6,7 @@
 //
 
 #import "XHttpRequestDelegate.h"
-#import "XAbstractionLibrary-Base-umbrella.h"
+#import <XAbstractionLibrary_Base/XAbstractionLibrary-Base-umbrella.h>
 
 /**
  *  短连接http请求对象

@@ -7,7 +7,7 @@
 
 #import "XHttpRequestDelegate.h"
 #import "XHttpResponseDelegate.h"
-#import "XAbstractionLibrary-Base-umbrella.h"
+#import <XAbstractionLibrary_Base/XAbstractionLibrary-Base-umbrella.h>
 
 typedef NS_ENUM(NSInteger, RequestSerializerType) {
     RequestSerializerTypeUnknown        = -1,
