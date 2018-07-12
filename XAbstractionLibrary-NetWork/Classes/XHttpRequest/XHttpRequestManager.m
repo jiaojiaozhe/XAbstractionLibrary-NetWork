@@ -10,6 +10,7 @@
 #import "XUploadHttpRequest.h"
 #import "XHttpRequestManager.h"
 #import "XDownloadHttpRequest.h"
+#import <XAbstractionLibrary_Base/XAbstractionLibrary-Base-umbrella.h>
 
 @interface XHttpRequestManager()
 @property (nonatomic,strong) AFHTTPSessionManager *sessionManager;
