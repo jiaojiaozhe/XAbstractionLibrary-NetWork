@@ -7,7 +7,7 @@
 
 #import "XHttpRequestDelegate.h"
 #import "XHttpResponseDelegate.h"
-//#import <XAbstractionLibrary_Base/XAbstractionLibrary-Base-umbrella.h>
+#import <XAbstractionLibrary_Base/XAbstractionLibrary-Base-umbrella.h>
 
 typedef NS_ENUM(NSInteger, RequestSerializerType) {
     RequestSerializerTypeUnknown        = -1,
@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, ResponseSerializerType) {
 /**
  *  http请求管理器
  */
-@interface XHttpRequestManager : NSObject
+@interface XHttpRequestManager : XBaseModel
 
 /**
  *  请求的超时时间设置
