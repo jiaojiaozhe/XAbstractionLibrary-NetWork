@@ -9,7 +9,6 @@
 #ifndef XAbstractionLibrary_XNonRetainObject_h
 #define XAbstractionLibrary_XNonRetainObject_h
 
-#import "XBaseModel.h"
 /**
  *  创建一个不使用retain的NSMutableArray
  *

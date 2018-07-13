@@ -133,7 +133,7 @@
     return outstring;
 }
 
-- (NSString *)getDeviceIPAddresses {
++ (NSString *)getDeviceIPAddresses {
     int sockfd = socket(AF_INET, SOCK_DGRAM, 0);
     NSMutableArray *ips = [NSMutableArray array];
     int BUFFERSIZE = 4096;
@@ -171,7 +171,7 @@
     return deviceIP;
 }
 
--(NSString *)deviceWANIPAddress
++(NSString *)deviceWANIPAddress
 {
     NSURL *ipURL = [NSURL URLWithString:@"http://ip.taobao.com/service/getIpInfo.php?ip=myip"];
     NSData *data = [NSData dataWithContentsOfURL:ipURL];
@@ -408,11 +408,11 @@
     return (kerr == KERN_SUCCESS) ? info.resident_size : 0;
 }
 
-- (NSUInteger) getCPUCount {
++ (NSUInteger) getCPUCount {
     return [NSProcessInfo processInfo].activeProcessorCount;
 }
 
-- (float) getCPUUsage {
++ (float) getCPUUsage {
     float cpu = 0;
     NSArray *cpus = [self getPerCPUUsage];
     if (cpus.count == 0) return -1;
@@ -422,7 +422,7 @@
     return cpu;
 }
 
-- (NSArray *) getPerCPUUsage {
++ (NSArray *) getPerCPUUsage {
     processor_info_array_t _cpuInfo, _prevCPUInfo = nil;
     mach_msg_type_number_t _numCPUInfo, _numPrevCPUInfo = 0;
     unsigned _numCPUs;

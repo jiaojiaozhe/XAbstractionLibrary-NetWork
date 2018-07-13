@@ -2,16 +2,17 @@
 //  XPermanentStoreData.h
 //  XAbstractionLibrary
 //
-//  Created by lanbiao on 15/7/30.
+//  Created by lanbiao on 18/7/20.
 //  Copyright (c) 2015年 lanbiao. All rights reserved.
 //
 
-#import "XBaseModel.h"
+#import "XData.h"
+#import <Foundation/Foundation.h>
 
 /**
  *  持久存储数据
  */
-@interface XPermanentStoreData : XBaseModel
+@interface XPermanentStoreData : XData
 
 /**
  *  持久化字符串
@@ -39,7 +40,7 @@
  *  @param cacheKey     待持久模型的key
  *  @return   YES 持久成功  NO 持久失败
  */
-+ (BOOL) saveModelToCache:(XBaseModel *) modelValue cacheKey:(XBaseModel *) cacheKey;
++ (BOOL) saveModelToCache:(NSObject *) modelValue cacheKey:(NSObject *) cacheKey;
 
 /**
  *  在本地持久中查找cachekey下的模型数据
@@ -48,7 +49,7 @@
  *
  *  @return 获取到模型数据
  */
-+ (XBaseModel *) modelFromCacheKey:(NSString *) cacheKey;
++ (NSObject *) modelFromCacheKey:(NSString *) cacheKey;
 
 /**
  *  清除本地所有的持久

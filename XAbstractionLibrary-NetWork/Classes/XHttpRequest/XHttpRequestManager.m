@@ -104,12 +104,6 @@
                                  requestParams:(NSDictionary *) requestParams
                            requestHeaderParams:(NSDictionary *) requestHeaderParams
                                  responseblock:(XResponseBlock) responseblock{
-    if(![XBaseModel validity]){
-        if(responseblock != NULL){
-            responseblock(nil,nil,nil);
-        }
-        return NULL;
-    }
     
     NSMutableURLRequest *request = [self createRequestURLWithMethod:method
                                                           urlString:requestUrlString

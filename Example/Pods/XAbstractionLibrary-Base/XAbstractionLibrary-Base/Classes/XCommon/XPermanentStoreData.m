@@ -53,12 +53,12 @@
     }
 }
 
-+ (BOOL) saveModelToCache:(XBaseModel *) modelValue cacheKey:(NSString *)cacheKey
++ (BOOL) saveModelToCache:(NSObject *) modelValue cacheKey:(NSString *)cacheKey
 {
     if(!cacheKey)
         return NO;
     
-    if(![modelValue isKindOfClass:[XBaseModel class]] ||
+    if(![modelValue isKindOfClass:[NSObject class]] ||
        ![modelValue conformsToProtocol:@protocol(NSCoding)])
         return NO;
     
@@ -66,12 +66,12 @@
     return [self saveData:modelData cacheKey:cacheKey];
 }
 
-+ (XBaseModel *) modelFromCacheKey:(NSString *) cacheKey
++ (NSObject *) modelFromCacheKey:(NSString *) cacheKey
 {
     if(!cacheKey)
         return nil;
     
-    XBaseModel *modelValue = NULL;
+    NSObject *modelValue = NULL;
     id data = [self dataFromKey:cacheKey];
     if(!data || [data isKindOfClass:[NSDictionary class]]){
         return NULL;

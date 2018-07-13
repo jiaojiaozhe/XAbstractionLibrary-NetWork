@@ -1,22 +1,22 @@
 //
-//  XBaseData.m
-//  Pods-XAbstractionLibrary-Base_Example
+//  XData.m
+//  MD5Digest
 //
-//  Created by lanbiao on 2018/7/26.
+//  Created by lanbiao on 2018/7/13.
 //
 
-#import "XBaseModel.h"
+#import "XData.h"
 #import "XMD5Digest.h"
 #import "XDeviceInfo.h"
 
-@implementation XBaseModel
+@implementation XData
 + (NSString *) uuid
 {
     NSString *ID = nil;
     static NSUInteger index = 0;
     static NSString *clientID = nil;
     
-    @synchronized(XBaseModel.class)
+    @synchronized(XData.class)
     {
         if(clientID.length <= 0){
             clientID = [XDeviceInfo getDeviceIDFA];
@@ -32,7 +32,7 @@
 - (instancetype) init
 {
     if(self = [super init]){
-        _ID = [XBaseModel uuid];
+        _ID = [XData uuid];
     }
     return self;
 }
@@ -56,9 +56,9 @@
 #pragma mark --NSCopying
 - (id)copyWithZone:(NSZone *)zone
 {
-    XBaseModel *newBaseModel = [[[self class] allocWithZone:zone] init];
-    newBaseModel.ID = [self.ID copy];
-    return newBaseModel;
+    XData *newData = [[[self class] allocWithZone:zone] init];
+    newData.ID = [self.ID copy];
+    return newData;
 }
 
 #pragma mark --

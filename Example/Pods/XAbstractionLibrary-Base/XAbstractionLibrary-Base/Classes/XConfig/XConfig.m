@@ -10,8 +10,4 @@
 
 @implementation XConfig
 
-- (void) config{
-    
-}
-
 @end

@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, ResponseSerializerType) {
 /**
  *  http请求管理器
  */
-@interface XHttpRequestManager : XBaseModel
+@interface XHttpRequestManager : XData
 
 /**
  *  请求的超时时间设置

@@ -1,17 +1,13 @@
 //
-//  XBaseModel.h
-//  Pods-XAbstractionLibrary-Base_Example
+//  XData.h
+//  MD5Digest
 //
-//  Created by lanbiao on 2018/7/26.
+//  Created by lanbiao on 2018/7/13.
 //
 
 #import <Foundation/Foundation.h>
 
-/**
- *  Created by lanbiao on 2018/07/26
- *  基础对象
- */
-@interface XBaseModel : NSObject<NSCopying,NSCoding>
+@interface XData : NSObject
 
 /**
  *  对象ID
@@ -36,4 +32,5 @@
  *  预埋，未来添加的事情
  */
 + (BOOL) validity;
+
 @end

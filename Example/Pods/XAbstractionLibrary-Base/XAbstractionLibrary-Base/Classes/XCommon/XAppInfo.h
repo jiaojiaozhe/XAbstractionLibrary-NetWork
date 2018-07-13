@@ -6,12 +6,13 @@
 //  Copyright (c) 2015年 lanbiao. All rights reserved.
 //
 
-#import "XBaseModel.h"
+#import "XData.h"
+#import <Foundation/Foundation.h>
 
 /**
  *  获取app信息
  */
-@interface XAppInfo : XBaseModel
+@interface XAppInfo : XData
 
 /**
  *  获取app版本号

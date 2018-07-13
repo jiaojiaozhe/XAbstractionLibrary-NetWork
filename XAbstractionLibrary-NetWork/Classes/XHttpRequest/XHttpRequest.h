@@ -11,7 +11,7 @@
 /**
  *  短连接http请求对象
  */
-@interface XHttpRequest : XBaseModel<XHttpRequestDelegate>
+@interface XHttpRequest : XData<XHttpRequestDelegate>
 
 /**
  *  请求命令名

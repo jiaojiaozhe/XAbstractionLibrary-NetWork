@@ -1,6 +1,6 @@
 # XAbstractionLibrary-Base
 
-[![CI Status](https://img.shields.io/travis/lanbiao/XAbstractionLibrary-Base.svg?style=flat)](https://travis-ci.org/lanbiao/XAbstractionLibrary-Base)
+[![CI Status](https://img.shields.io/travis/jiaojiaozhe/XAbstractionLibrary-Base.svg?style=flat)](https://travis-ci.org/jiaojiaozhe/XAbstractionLibrary-Base)
 [![Version](https://img.shields.io/cocoapods/v/XAbstractionLibrary-Base.svg?style=flat)](https://cocoapods.org/pods/XAbstractionLibrary-Base)
 [![License](https://img.shields.io/cocoapods/l/XAbstractionLibrary-Base.svg?style=flat)](https://cocoapods.org/pods/XAbstractionLibrary-Base)
 [![Platform](https://img.shields.io/cocoapods/p/XAbstractionLibrary-Base.svg?style=flat)](https://cocoapods.org/pods/XAbstractionLibrary-Base)
@@ -22,7 +22,7 @@ pod 'XAbstractionLibrary-Base'
 
 ## Author
 
-lanbiao, bluebiao@163.com
+jiaojiaozhe, bluebiao@163.com
 
 ## License
 
