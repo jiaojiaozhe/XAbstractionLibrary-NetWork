@@ -16,11 +16,17 @@
         return NO;
     }
     
+#if TARGET_IPHONE_SIMULATOR
+    
+#else
+    //不定义SIMULATOR_TEST这个宏
     KeychainItemWrapper *keyChainItemWrapper = [[KeychainItemWrapper alloc] initWithIdentifier:cacheKey accessGroup:NULL];
     if(value != NULL)
         [keyChainItemWrapper setObject:value forKey:cacheKey];
     else
         [keyChainItemWrapper resetKeychainItem];
+#endif
+    
     
     return YES;
 }
@@ -30,8 +36,15 @@
         return NULL;
     }
     
+    id value = NULL;
+#if TARGET_IPHONE_SIMULATOR
+    
+#else
     KeychainItemWrapper *keyChainItemWrapper = [[KeychainItemWrapper alloc] initWithIdentifier:cacheKey accessGroup:NULL];
-    return [keyChainItemWrapper objectForKey:cacheKey];
+    value = [keyChainItemWrapper objectForKey:cacheKey];
+#endif
+    
+    return value;
 }
 
 + (BOOL) saveStringToCache:(NSString *) value cacheKey:(NSString *)cacheKey

@@ -8,6 +8,7 @@
 
 #import "XViewController.h"
 #import <XAbstractionLibrary_Base/XAbstractionLibrary-Base-umbrella.h>
+#import <XAbstractionLibrary_NetWork/XAbstractionLibrary-NetWork-umbrella.h>
 
 @interface XViewController ()
 
@@ -19,7 +20,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
 }
 
 - (void)didReceiveMemoryWarning
