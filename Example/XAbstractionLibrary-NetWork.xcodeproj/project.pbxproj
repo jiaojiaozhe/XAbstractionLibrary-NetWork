@@ -23,6 +23,8 @@
 		6C5C3F657B377FA63B6FAD56 /* Pods_XAbstractionLibrary_NetWork_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45010282F266D8DD4D89BC6A /* Pods_XAbstractionLibrary_NetWork_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BCBD282A2107355B005F2E25 /* HttpRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBD28292107355B005F2E25 /* HttpRequestManager.m */; };
+		BCBD282D21073573005F2E25 /* HttpsRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBD282C21073573005F2E25 /* HttpsRequestManager.m */; };
 		BCE655C020F783910018F73E /* BaseHttpRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE655BF20F783910018F73E /* BaseHttpRequestManager.m */; };
 		DB37234EDEC6A810103C5766 /* Pods_XAbstractionLibrary_NetWork_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0ECB89D6D6A6D1B71200054 /* Pods_XAbstractionLibrary_NetWork_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		750E9D15EC7CC2D8A5FADF61 /* Pods-XAbstractionLibrary-NetWork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XAbstractionLibrary-NetWork_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XAbstractionLibrary-NetWork_Example/Pods-XAbstractionLibrary-NetWork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCBD28282107355B005F2E25 /* HttpRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpRequestManager.h; sourceTree = "<group>"; };
+		BCBD28292107355B005F2E25 /* HttpRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpRequestManager.m; sourceTree = "<group>"; };
+		BCBD282B21073573005F2E25 /* HttpsRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpsRequestManager.h; sourceTree = "<group>"; };
+		BCBD282C21073573005F2E25 /* HttpsRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpsRequestManager.m; sourceTree = "<group>"; };
 		BCE655BE20F783910018F73E /* BaseHttpRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseHttpRequestManager.h; sourceTree = "<group>"; };
 		BCE655BF20F783910018F73E /* BaseHttpRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseHttpRequestManager.m; sourceTree = "<group>"; };
 		C4CC135371E24D232DAA7ED1 /* Pods-XAbstractionLibrary-NetWork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XAbstractionLibrary-NetWork_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XAbstractionLibrary-NetWork_Example/Pods-XAbstractionLibrary-NetWork_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +200,10 @@
 			children = (
 				BCE655BE20F783910018F73E /* BaseHttpRequestManager.h */,
 				BCE655BF20F783910018F73E /* BaseHttpRequestManager.m */,
+				BCBD28282107355B005F2E25 /* HttpRequestManager.h */,
+				BCBD28292107355B005F2E25 /* HttpRequestManager.m */,
+				BCBD282B21073573005F2E25 /* HttpsRequestManager.h */,
+				BCBD282C21073573005F2E25 /* HttpsRequestManager.m */,
 			);
 			path = AbstractionLibrary;
 			sourceTree = "<group>";
@@ -260,6 +270,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = jiaojiaozhe;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						ProvisioningStyle = Automatic;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -376,6 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBD282A2107355B005F2E25 /* HttpRequestManager.m in Sources */,
+				BCBD282D21073573005F2E25 /* HttpsRequestManager.m in Sources */,
 				6003F59E195388D20070C39A /* XAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* XViewController.m in Sources */,
 				BCE655C020F783910018F73E /* BaseHttpRequestManager.m in Sources */,
@@ -507,12 +522,16 @@
 			baseConfigurationReference = 750E9D15EC7CC2D8A5FADF61 /* Pods-XAbstractionLibrary-NetWork_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XAbstractionLibrary-NetWork/XAbstractionLibrary-NetWork-Prefix.pch";
 				INFOPLIST_FILE = "XAbstractionLibrary-NetWork/XAbstractionLibrary-NetWork-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -522,12 +541,16 @@
 			baseConfigurationReference = C4CC135371E24D232DAA7ED1 /* Pods-XAbstractionLibrary-NetWork_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XAbstractionLibrary-NetWork/XAbstractionLibrary-NetWork-Prefix.pch";
 				INFOPLIST_FILE = "XAbstractionLibrary-NetWork/XAbstractionLibrary-NetWork-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

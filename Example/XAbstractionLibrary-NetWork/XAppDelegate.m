@@ -7,12 +7,55 @@
 //
 
 #import "XAppDelegate.h"
+#import "HttpRequestManager.h"
+#import "HttpsRequestManager.h"
+
+@interface XAppDelegate()<XHttpResponseDelegate>
+
+@end
 
 @implementation XAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     // Override point for customization after application launch.
+    
+    NSMutableDictionary *requestParams = [NSMutableDictionary dictionary];
+    DICT_PUT(requestParams, @"param", @"vS6Hr1V0kIIRu+A9sJL5MDHNh9N1P1FLk0CcHtaF8WF4CzJGky2/Lj/q+fuo1X4s");
+    
+    NSMutableDictionary *requestHeaderParams = [NSMutableDictionary dictionary];
+    DICT_PUT(requestHeaderParams, @"hKey", @"hValue");
+    
+    [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
+                                                              postParams:requestParams
+                                                        postHeaderParams:requestHeaderParams
+                                                            httpDelegate:self
+                                                           responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
+                                                                XLOG(@"1~~~");
+                                                            }];
+    
+    [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
+                                                              postParams:requestParams
+                                                        postHeaderParams:requestHeaderParams
+                                                            httpDelegate:self
+                                                           responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
+                                                               XLOG(@"2~~~");
+                                                           }];
+    
+    [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
+                                                              postParams:requestParams
+                                                        postHeaderParams:requestHeaderParams
+                                                            httpDelegate:self
+                                                           responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
+                                                               XLOG(@"3~~~");
+                                                           }];
+    
+    [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
+                                                              postParams:requestParams
+                                                        postHeaderParams:requestHeaderParams
+                                                            httpDelegate:self
+                                                           responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
+                                                               XLOG(@"4~~~");
+                                                           }];
     return YES;
 }
 
@@ -41,6 +84,34 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark --
+#pragma mark XHttpResponseDelegate
+
+- (void) cancelRequest:(id<XHttpRequestDelegate>) request{
+    XLOG(@"cancelRequest");
+}
+
+- (void) willStartRequest:(id<XHttpRequestDelegate>) request{
+    XLOG(@"willStartRequest");
+}
+
+- (void) willRetryRequest:(id<XHttpRequestDelegate>) oldRequest
+               newRequest:(id<XHttpRequestDelegate>) newRequest{
+    XLOG(@"willRetryRequest");
+}
+
+- (void) execWithRequest:(id<XHttpRequestDelegate>) request
+                progress:(long long) progress
+           totalProgress:(long long) totalProgress{
+    XLOG(@"execWithRequest");
+}
+
+- (void) completeDidRequest:(id<XHttpRequestDelegate>) request
+                responseDic:(id) responseDic
+                      error:(NSError *) error{
+    XLOG(@"completeDidRequest");
 }
 
 @end

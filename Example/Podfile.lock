@@ -16,10 +16,10 @@ PODS:
     - AFNetworking/NSURLSession
   - MD5Digest (1.1.0)
   - OpenUDID (1.0.0)
-  - XAbstractionLibrary-Base (0.0.11):
+  - XAbstractionLibrary-Base (0.0.12):
     - MD5Digest
     - OpenUDID
-  - XAbstractionLibrary-NetWork (0.0.7):
+  - XAbstractionLibrary-NetWork (0.0.8):
     - AFNetworking
     - XAbstractionLibrary-Base
 
@@ -42,8 +42,8 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
   OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
-  XAbstractionLibrary-Base: 946b7598239ee28ce0edfe4fb58acd7c2752d565
-  XAbstractionLibrary-NetWork: e628a0ff48462c2a3403bcac854977ab31899511
+  XAbstractionLibrary-Base: 88d83107f0189173c24c851c502487ac3e053801
+  XAbstractionLibrary-NetWork: e4c59ce684ec7b16e6be5b12fd41c7089f905409
 
 PODFILE CHECKSUM: f4d78186a356c7edbad21fd54de0b7262eb017a8
 
