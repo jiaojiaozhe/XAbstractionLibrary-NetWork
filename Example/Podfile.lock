@@ -19,7 +19,7 @@ PODS:
   - XAbstractionLibrary-Base (0.0.12):
     - MD5Digest
     - OpenUDID
-  - XAbstractionLibrary-NetWork (0.0.8):
+  - XAbstractionLibrary-NetWork (0.0.10):
     - AFNetworking
     - XAbstractionLibrary-Base
 
@@ -43,7 +43,7 @@ SPEC CHECKSUMS:
   MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
   OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
   XAbstractionLibrary-Base: 88d83107f0189173c24c851c502487ac3e053801
-  XAbstractionLibrary-NetWork: e4c59ce684ec7b16e6be5b12fd41c7089f905409
+  XAbstractionLibrary-NetWork: 12a3ce661ed3a1b21b92f7de8d9b4a7fbae8d758
 
 PODFILE CHECKSUM: f4d78186a356c7edbad21fd54de0b7262eb017a8
 

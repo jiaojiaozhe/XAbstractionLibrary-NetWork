@@ -19,43 +19,55 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     // Override point for customization after application launch.
     
-    NSMutableDictionary *requestParams = [NSMutableDictionary dictionary];
-    DICT_PUT(requestParams, @"param", @"vS6Hr1V0kIIRu+A9sJL5MDHNh9N1P1FLk0CcHtaF8WF4CzJGky2/Lj/q+fuo1X4s");
-    
-    NSMutableDictionary *requestHeaderParams = [NSMutableDictionary dictionary];
-    DICT_PUT(requestHeaderParams, @"hKey", @"hValue");
-    
-    [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
-                                                              postParams:requestParams
-                                                        postHeaderParams:requestHeaderParams
-                                                            httpDelegate:self
-                                                           responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
-                                                                XLOG(@"1~~~");
-                                                            }];
-    
-    [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
-                                                              postParams:requestParams
-                                                        postHeaderParams:requestHeaderParams
-                                                            httpDelegate:self
-                                                           responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
-                                                               XLOG(@"2~~~");
-                                                           }];
-    
-    [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
-                                                              postParams:requestParams
-                                                        postHeaderParams:requestHeaderParams
-                                                            httpDelegate:self
-                                                           responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
-                                                               XLOG(@"3~~~");
-                                                           }];
-    
-    [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
-                                                              postParams:requestParams
-                                                        postHeaderParams:requestHeaderParams
-                                                            httpDelegate:self
-                                                           responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
-                                                               XLOG(@"4~~~");
-                                                           }];
+//    NSMutableDictionary *requestParams = [NSMutableDictionary dictionary];
+//    DICT_PUT(requestParams, @"param", @"vS6Hr1V0kIIRu+A9sJL5MDHNh9N1P1FLk0CcHtaF8WF4CzJGky2/Lj/q+fuo1X4s");
+//
+//    NSMutableDictionary *requestHeaderParams = [NSMutableDictionary dictionary];
+//    DICT_PUT(requestHeaderParams, @"hKey", @"hValue");
+//
+//    [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
+//                                                              postParams:requestParams
+//                                                        postHeaderParams:requestHeaderParams
+//                                                            httpDelegate:self
+//                                                           responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
+//                                                                XLOG(@"1~~~");
+//                                                            }];
+//
+//    [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
+//                                                              postParams:requestParams
+//                                                        postHeaderParams:requestHeaderParams
+//                                                            httpDelegate:self
+//                                                           responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
+//                                                               XLOG(@"2~~~");
+//                                                           }];
+//
+//    [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
+//                                                              postParams:requestParams
+//                                                        postHeaderParams:requestHeaderParams
+//                                                            httpDelegate:self
+//                                                           responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
+//                                                               XLOG(@"3~~~");
+//                                                           }];
+//
+//    [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
+//                                                              postParams:requestParams
+//                                                        postHeaderParams:requestHeaderParams
+//                                                            httpDelegate:self
+//                                                           responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
+//                                                               XLOG(@"4~~~");
+//                                                           }];
+//
+//    __weak typeof(self) weakSelf = self;
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        sleep(0.1f);
+//        [[HttpRequestManager shareHttpRequestManager] postRequestWithCommand:@"opertationsActivity/getDynamicImageList"
+//                                                                  postParams:requestParams
+//                                                            postHeaderParams:requestHeaderParams
+//                                                                httpDelegate:weakSelf
+//                                                               responseblock:^(id<XHttpRequestDelegate> httpRequest, id responseObj, NSError *error) {
+//                                                                   XLOG(@"5~~~");
+//                                                               }];
+//    });
     return YES;
 }
 
