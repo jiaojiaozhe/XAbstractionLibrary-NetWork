@@ -423,12 +423,12 @@
                         id<XHttpRequestDelegate> request = [allValue objectAtIndex:index];
                         if([request isKindOfClass:[XHttpRequest class]]){
                             XHttpRequest *httpRequest = (XHttpRequest *)request;
-                            if([httpRequest respondsToSelector:@selector(completeDidRequest:responseDic:error:)]){
-                                [httpRequest completeDidRequest:httpRequest responseDic:responseObject error:error];
-                            }
-                            
                             if(httpRequest.responseBlock){
                                 httpRequest.responseBlock(httpRequest, responseObject, error);
+                            }
+                            
+                            if([httpRequest respondsToSelector:@selector(completeDidRequest:responseDic:error:)]){
+                                [httpRequest completeDidRequest:httpRequest responseDic:responseObject error:error];
                             }
                         }
                     }
