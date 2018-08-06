@@ -455,10 +455,13 @@
                                                                                                     responseObject:responseObject
                                                                                                              error:error];
                                                                         }else{
-                                                                            NSURLSessionDataTask *newTaskData = [self startRequest:urlRequest
+                                                                            NSURLSessionDataTask *newTaskData = [weakSelf startRequest:urlRequest
                                                                                                                            request:httpRequest uploadProgress:uploadProgress downloadProgress:downloadProgress completionHandle:completionHandle];
                                                                             [weakSelf processRequestRetryCallBack:httpRequest
                                                                                                        newRequest:newRequest];
+                                                                            [weakSelf processRequestLoadingCallBack:newRequest
+                                                                                                           progress:0
+                                                                                                      totalProgress:100];
                                                                             
                                                                             if([newRequest isKindOfClass:[XHttpRequest class]]){
                                                                                 XHttpRequest *newHttpRequest = (XHttpRequest *)newRequest;
