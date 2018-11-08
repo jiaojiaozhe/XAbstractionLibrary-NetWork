@@ -41,7 +41,7 @@ XAbstractionLibrary-NetWork是一个抽象层网络组件,拥有超简单的易�
   # s.dependency 'AFNetworking', '~> 2.3'
   
   s.dependency 'AFNetworking'
-  s.dependency 'XAbstractionLibrary-Base', '~> 0.0.17'
+  s.dependency 'XAbstractionLibrary-Base'
   
   
 end
