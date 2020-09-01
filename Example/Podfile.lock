@@ -1,25 +1,25 @@
 PODS:
-  - AFNetworking (3.2.1):
-    - AFNetworking/NSURLSession (= 3.2.1)
-    - AFNetworking/Reachability (= 3.2.1)
-    - AFNetworking/Security (= 3.2.1)
-    - AFNetworking/Serialization (= 3.2.1)
-    - AFNetworking/UIKit (= 3.2.1)
-  - AFNetworking/NSURLSession (3.2.1):
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (3.2.1)
-  - AFNetworking/Security (3.2.1)
-  - AFNetworking/Serialization (3.2.1)
-  - AFNetworking/UIKit (3.2.1):
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - MD5Digest (1.1.0)
   - OpenUDID (1.0.0)
-  - XAbstractionLibrary-Base (0.0.17):
+  - XAbstractionLibrary-Base (0.0.19):
     - MD5Digest
     - OpenUDID
-  - XAbstractionLibrary-NetWork (0.0.17):
+  - XAbstractionLibrary-NetWork (0.0.18):
     - AFNetworking
     - XAbstractionLibrary-Base
 
@@ -39,11 +39,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
   OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
-  XAbstractionLibrary-Base: 8ed875c85ee70cab688bdc7ac3e13cf73ceba6ff
-  XAbstractionLibrary-NetWork: f903d60b8a9b10acd99dc82aa1fa0ba45f39f1ff
+  XAbstractionLibrary-Base: d993441feddf4335783491c1bb6722b04412cf45
+  XAbstractionLibrary-NetWork: 89b155e3fee24466bd9b528a9541ff2eac5432d2
 
 PODFILE CHECKSUM: dd020dea5c28c489a8dea179aaf6dba049a157b2
 
