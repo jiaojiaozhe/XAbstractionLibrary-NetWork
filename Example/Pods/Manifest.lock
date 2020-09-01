@@ -27,12 +27,12 @@ DEPENDENCIES:
   - XAbstractionLibrary-NetWork (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/jiaojiaozhe/XAbstractionLibrary-Specs:
+    - XAbstractionLibrary-Base
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - AFNetworking
     - MD5Digest
     - OpenUDID
-  https://github.com/jiaojiaozhe/XAbstractionLibrary-Specs.git:
-    - XAbstractionLibrary-Base
 
 EXTERNAL SOURCES:
   XAbstractionLibrary-NetWork:
@@ -45,6 +45,6 @@ SPEC CHECKSUMS:
   XAbstractionLibrary-Base: 8ed875c85ee70cab688bdc7ac3e13cf73ceba6ff
   XAbstractionLibrary-NetWork: f903d60b8a9b10acd99dc82aa1fa0ba45f39f1ff
 
-PODFILE CHECKSUM: f4d78186a356c7edbad21fd54de0b7262eb017a8
+PODFILE CHECKSUM: dd020dea5c28c489a8dea179aaf6dba049a157b2
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.9.1

@@ -6,12 +6,12 @@
 //  Copyright © 2018年 jiaojiaozhe. All rights reserved.
 //
 
-#import "XAbstractionLibrary-NetWork-umbrella.h"
+#import <XAbstractionLibrary_Network/XAbstractionLibrary-Network-umbrella.h>
 
 /**
  基础http请求管理器
  */
-@interface BaseHttpRequestManager : XHttpRequestManager
+@interface BaseHttpRequestManager : XBaseHttpRequestManager
 /**
  *  接口请求主机地址
  */
