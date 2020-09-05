@@ -42,6 +42,8 @@ XAbstractionLibrary-NetWork是一个抽象层网络组件,拥有超简单的易�
   
   s.dependency 'AFNetworking'
   s.dependency 'XAbstractionLibrary-Base'
+#  s.dependency 'XAbstractionLibrary-Base', :path => '../../XAbstractionLibrary-Base/', :configurations => %w[Debug]
+#  s.dependency 'XAbstractionLibrary-Base', :configurations => %w[Prerelease]
   
   
 end
