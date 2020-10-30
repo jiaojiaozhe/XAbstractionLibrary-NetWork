@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XAbstractionLibrary-NetWork'
-  s.version          = '0.0.18'
+  s.version          = '0.0.21'
   s.summary          = 'XAbstractionLibrary-NetWork是一个抽象层网络组件.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ XAbstractionLibrary-NetWork是一个抽象层网络组件,拥有超简单的易�
   s.source           = { :git => 'https://github.com/jiaojiaozhe/XAbstractionLibrary-NetWork.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'XAbstractionLibrary-NetWork/Classes/**/*'
   
