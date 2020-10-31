@@ -26,5 +26,10 @@
     "XAbstractionLibrary-Base": [
 
     ]
+  },
+  "configuration_pod_whitelist": {
+    "XAbstractionLibrary-Base": [
+      "debug"
+    ]
   }
 }
