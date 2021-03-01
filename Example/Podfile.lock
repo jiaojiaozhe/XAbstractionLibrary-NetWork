@@ -16,10 +16,10 @@ PODS:
     - AFNetworking/NSURLSession
   - MD5Digest (1.1.0)
   - OpenUDID (1.0.0)
-  - XAbstractionLibrary-Base (0.0.26):
+  - XAbstractionLibrary-Base (0.0.27):
     - MD5Digest
     - OpenUDID
-  - XAbstractionLibrary-NetWork (0.0.22):
+  - XAbstractionLibrary-NetWork (0.0.26):
     - AFNetworking
     - XAbstractionLibrary-Base
 
@@ -42,9 +42,9 @@ SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   MD5Digest: fea371215507cfcdc3c9633d02cffc7fd075ebc3
   OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
-  XAbstractionLibrary-Base: f345d0195eca303b182cb542797cf769c3ead099
-  XAbstractionLibrary-NetWork: e4ec1e5ceb3e96b33b9b5ef524b91fa22bdbedee
+  XAbstractionLibrary-Base: 270b1b51c976e64dcb2d2a12f115e1b11e454ef8
+  XAbstractionLibrary-NetWork: 55e7328787fd405e7cd78faeb941b790b1d6ec65
 
 PODFILE CHECKSUM: dd020dea5c28c489a8dea179aaf6dba049a157b2
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.0
